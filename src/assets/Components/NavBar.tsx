@@ -7,7 +7,7 @@ type props = {
 export default function NavBar(props:props) {
 
     return (
-        <div className="navbar navbar-default w-dvw bg-blue-900 text-white">
+        <div className="navbar navbar-default w-dvw bg-violet-500 text-white">
             <ul className="flex flex-row w-full justify-around">
                 {props.sections.map((section, i):JSX.Element => (
                     <li

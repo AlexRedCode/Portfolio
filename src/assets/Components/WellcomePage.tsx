@@ -12,7 +12,7 @@ export default function WellcomePage() {
                             <span>Especialización en videojuegos</span>
                             <span className="animate-pulse">🎮</span>
                         </div>
-                        <hr className="border-b border-indigo-500 w-3/4 mt-5.5 mb-5.5" />
+                        <hr className="border-b border-violet-500 w-3/4 mt-5.5 mb-5.5" />
                         <h2></h2>
                     </div>
                 </div>
@@ -25,7 +25,7 @@ function Presentacion(){
     return(
         <div className="bg-cover bg-center BackgroundIcon" style={{ backgroundImage: `url(${BgImg})` }}>
             <div className={"relative group"}>
-                <div className="absolute inset-0 bg-purple-500 rounded-full blur-md opacity-40 group-hover:opacity-75 transition-opacity duration-300 ml-4 mb-4"></div>
+                <div className="absolute inset-0 bg-violet-500 rounded-full blur-md opacity-40 group-hover:opacity-75 transition-opacity duration-300 ml-4 mb-4"></div>
                 <img className="relative w-28 h-28 md:w-32 md:h-32 rounded-full object-cover bg-zinc-700 shadow-xl ml-4 mb-4" src="/PlaceHolderIcon.png" alt="Icono"/>
             </div>
         </div>

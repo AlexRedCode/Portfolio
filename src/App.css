@@ -1,5 +1,7 @@
 .opcionNav:hover{
-    background-color: blueviolet;
+    background-color: rgb(91 33 182);
+    color: white;
+    font-size: 15pt;
     transition: 0.5s;
 }
 .opcionNav{
