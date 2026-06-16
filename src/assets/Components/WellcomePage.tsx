@@ -1,4 +1,4 @@
-
+import BgImg from "/BgImg.png";
 export default function WellcomePage() {
     return(
         <>
@@ -23,10 +23,10 @@ export default function WellcomePage() {
 }
 function Presentacion(){
     return(
-        <div className="bg-cover bg-center BackgroundIcon">
+        <div className="bg-cover bg-center BackgroundIcon" style={{ backgroundImage: `url(${BgImg})` }}>
             <div className={"relative group"}>
                 <div className="absolute inset-0 bg-purple-500 rounded-full blur-md opacity-40 group-hover:opacity-75 transition-opacity duration-300 ml-4 mb-4"></div>
-                <img className="relative w-28 h-28 md:w-32 md:h-32 rounded-full object-cover bg-zinc-700 shadow-xl ml-4 mb-4" src="src/assets/PlaceHolderIcon.png" alt="Icono"/>
+                <img className="relative w-28 h-28 md:w-32 md:h-32 rounded-full object-cover bg-zinc-700 shadow-xl ml-4 mb-4" src="/PlaceHolderIcon.png" alt="Icono"/>
             </div>
         </div>
     )

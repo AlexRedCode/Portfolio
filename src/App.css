@@ -19,7 +19,6 @@
     height: 300px;
     justify-content: center;
     align-items: center;
-    background-image: url("src/assets/BgImg.png");
     filter: sepia(50%);
 }
 .PageFormat{
