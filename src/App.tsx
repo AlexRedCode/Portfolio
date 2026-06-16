@@ -9,7 +9,7 @@ function App() {
     return (
         <>
             <NavBar sections={sections} page={page} setPage={setPage}/>
-            {page === 0 ? (<WellcomePage/>):(<h1>WIP ⚠️</h1>)}
+            {page === 0 ? (<WellcomePage/>):(<h2>WIP ⚠️</h2>)}
         </>
     )
 }
