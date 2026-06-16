@@ -1,0 +1,24 @@
+import {type JSX} from "react";
+type props = {
+    sections:string[],
+    page: number,
+    setPage: (page: number)=> void
+}
+export default function NavBar(props:props) {
+
+    return (
+        <div className="navbar navbar-default w-dvw bg-blue-900">
+            <ul className="flex flex-row w-full justify-around">
+                {props.sections.map((section, i):JSX.Element => (
+                    <li
+                        key={i}
+                        onClick={() => props.setPage(i)}
+                        className="opcionNav cursor-pointer hover:text-purple-400 transition-colors"
+                    >
+                        {section}
+                    </li>
+                ))}
+            </ul>
+        </div>
+    )
+}
