@@ -34,7 +34,7 @@ export default function HistorialAcademico() {
 
             <div className="mb-12">
                 <h2 className="text-3xl font-black text-white flex items-center gap-2">
-                    <span className="w-1.5 h-7 bg-purple-500 rounded-full"></span>
+                    <span className="w-1.5 h-7 SpanHistorial bg-purple-500 rounded-full"></span>
                     Títulos y Certificados
                 </h2>
                 <p className="text-slate-400 text-sm mt-1">Mi trayectoria académica y formaciones oficiales.</p>
@@ -45,11 +45,11 @@ export default function HistorialAcademico() {
                 {estudios.map((item, idx) => (
                     <div key={idx} className="relative pl-8 group">
 
-                        <div className="absolute w-5 h-5 bg-zinc-900 border-2 border-zinc-700 rounded-full -left-[11px] top-1.5 flex items-center justify-center text-[10px] group-hover:border-purple-500 group-hover:bg-purple-950 transition-all duration-300 shadow-md shadow-black">
+                        <div className="group-hover:border-2 group-hover:border-purple-500 absolute w-5 h-5 bg-zinc-900 border-2 border-zinc-700 rounded-full -left-[11px] top-1.5 flex items-center justify-center text-[10px] transition-all duration-300 shadow-md shadow-black">
                             <span className="opacity-0 group-hover:opacity-100 transition-opacity">✨</span>
                         </div>
 
-                        <div className="p-6 rounded-2xl bg-zinc-900/40 border border-white/5 backdrop-blur-md shadow-xl hover:border-white/10 transition-all duration-300">
+                        <div className="p-6 rounded-2xl DivHistorial bg-zinc-900/40 border border-white/5 backdrop-blur-md shadow-xl hover:border-white/10 transition-all duration-300">
 
                             <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
                                 <span className={`px-2.5 py-0.5 text-xs font-semibold rounded-full border ${item.badgeColor}`}>
@@ -58,7 +58,7 @@ export default function HistorialAcademico() {
                                 <span className={`text-xl hidden sm:inline text-${item.badgeColor} font-bold`}>{item.icon}</span>
                             </div>
 
-                            <h3 className="text-xl font-bold text-white leading-tight group-hover:text-purple-300 transition-colors">
+                            <h3 className="text-xl font-bold text-white leading-tight  transition-colors">
                                 {item.titulo}
                             </h3>
 

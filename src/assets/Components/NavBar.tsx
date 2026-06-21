@@ -7,13 +7,13 @@ type props = {
 export default function NavBar(props:props) {
 
     return (
-        <div className="navbar navbar-default w-dvw bg-violet-600 text-white">
+        <div className="navbar navbar-default w-dvw bg-[#28e0daff] text-white">
             <ul className="flex flex-row w-full justify-around">
                 {props.sections.map((section, i):JSX.Element => (
                     <li
                         key={i}
                         onClick={() => props.setPage(i)}
-                        className="opcionNav cursor-pointer hover:text-purple-400 transition-colors"
+                        className="opcionNav font-bold cursor-pointer  transition-colors"
                     >
                         {section}
                     </li>

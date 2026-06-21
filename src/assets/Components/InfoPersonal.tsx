@@ -31,7 +31,6 @@ export default function InfoPersonal() {
                     <h3 className="text-xl font-bold text-white mb-4">
                         🔗 Contactos
                     </h3>
-                    <p className="text-xs text-slate-400 mb-4">¿Tienes alguna propuesta o quieres charlar de código?</p>
 
                     <div className="flex flex-col gap-3">
                         <a href="mailto:alexredonpravos@gmail.com" className="flex items-center gap-3 p-3 rounded-xl bg-zinc-800/50 hover:bg-purple-600/20 border border-white/5 hover:border-purple-500/30 transition-all group">
@@ -74,6 +73,15 @@ export default function InfoPersonal() {
                                 <div className="bg-purple-500 h-full w-[100%] rounded-full"></div>
                             </div>
                         </div>
+                        <div>
+                            <div className="flex justify-between text-sm mb-1">
+                                <span className="font-medium text-white">Catalán</span>
+                                <span className="text-xs text-slate-400">Nativo</span>
+                            </div>
+                            <div className="w-full bg-zinc-800 h-2 rounded-full overflow-hidden">
+                                <div className="bg-purple-500 h-full w-[100%] rounded-full"></div>
+                            </div>
+                        </div>
 
                         <div>
                             <div className="flex justify-between text-sm mb-1">
@@ -93,11 +101,11 @@ export default function InfoPersonal() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-400">
                         <div className="p-3 bg-zinc-800/30 rounded-xl border border-white/5">
                             <h4 className="font-bold text-white mb-1">🎮 Videojuegos</h4>
-                            <p>A parte de apasionarme el desarrollo de videojuegos tambien disfruto jugarlos. Soy muy aficionado de los juegos desde que era pequeño</p>
+                            <p>A parte de apasionarme el desarrollo de videojuegos tambien disfruto jugarlos. Soy muy aficionado a los juegos desde que era pequeño.</p>
                         </div>
                         <div className="p-3 bg-zinc-800/30 rounded-xl border border-white/5">
                             <h4 className="font-bold text-white mb-1">🎭 Teatro</h4>
-                            <p>Por otro lado también me gusta el mundo de la farandula. Soy actor amateur desde muy temprana edad</p>
+                            <p>Por otro lado también me gusta el mundo de la farandula. Soy actor amateur desde muy temprana edad.</p>
                         </div>
                     </div>
                 </div>
