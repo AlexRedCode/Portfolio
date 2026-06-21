@@ -26,13 +26,12 @@ function Presentacion(){
         <div className="bg-cover bg-center BackgroundIcon" style={{ backgroundImage: `url(${BgImg})` }}>
             <div className={"relative group"}>
                 <div className="absolute inset-0 bg-violet-500 rounded-full blur-md opacity-40 group-hover:opacity-75 transition-opacity duration-300 ml-4 mb-4"></div>
-                <img className="relative w-28 h-28 md:w-32 md:h-32 rounded-full object-cover bg-zinc-700 shadow-xl ml-4 mb-4" src="/PlaceHolderIcon.png" alt="Icono"/>
+                <img className="relative w-28 h-28 md:w-32 md:h-32 rounded-full object-cover bg-zinc-700 shadow-xl ml-4 mb-4" src="/Icon.JPG" alt="Icono"/>
             </div>
         </div>
     )
 }
 function Conocimientos() {
-    // Organizados por categorías con colores neón sutiles para el diseño gamer/oscuro
     const habilidades = [
         {
             title: "Front-end",
@@ -59,27 +58,22 @@ function Conocimientos() {
 
     return (
         <div className="w-full max-w-4xl mx-auto px-6 py-12 text-left animate-fade-in">
-            {/* Título de la sección con una pequeña línea guía */}
             <div className="mb-8">
                 <h2 className="text-3xl font-black text-white flex items-center gap-2">
                     <span className="w-1.5 h-7 bg-indigo-500 rounded-full"></span>
                     Conocimientos En
                 </h2>
             </div>
-
-            {/* Contenedor Grid: 1 columna en móvil, 3 en pantallas medianas/grandes */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {habilidades.map((cat, idx) => (
                     <div
                         key={idx}
                         className={`p-6 rounded-2xl bg-zinc-900/40 border ${cat.borderColor} backdrop-blur-md shadow-xl hover:scale-[1.02] transition-transform duration-300`}
                     >
-                        {/* Título de la Categoría */}
                         <h3 className={`text-xl font-bold ${cat.textColor} mb-4 pb-2 border-b border-white/5`}>
                             {cat.title}
                         </h3>
 
-                        {/* Lista de Tecnologías en formato "Píldoras/Tags" */}
                         <ul className="flex flex-col gap-2">
                             {cat.techs.map((tech, i) => (
                                 <li
